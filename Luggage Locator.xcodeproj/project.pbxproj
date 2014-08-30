@@ -12,6 +12,7 @@
 		22CF1D4C19B220A8002D4F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CF1D4A19B220A8002D4F59 /* Main.storyboard */; };
 		22CF1D4E19B220A8002D4F59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CF1D4D19B220A8002D4F59 /* Images.xcassets */; };
 		22CF1D5A19B220A8002D4F59 /* Luggage_LocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D5919B220A8002D4F59 /* Luggage_LocatorTests.swift */; };
+		22CF1D6419B2265E002D4F59 /* LuggageLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		22CF1D5319B220A8002D4F59 /* Luggage LocatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luggage LocatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CF1D5819B220A8002D4F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CF1D5919B220A8002D4F59 /* Luggage_LocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luggage_LocatorTests.swift; sourceTree = "<group>"; };
+		22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuggageLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				22CF1D4A19B220A8002D4F59 /* Main.storyboard */,
 				22CF1D4D19B220A8002D4F59 /* Images.xcassets */,
 				22CF1D4419B220A8002D4F59 /* Supporting Files */,
+				22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */,
 			);
 			path = "Luggage Locator";
 			sourceTree = "<group>";
@@ -158,6 +161,11 @@
 				TargetAttributes = {
 					22CF1D4019B220A8002D4F59 = {
 						CreatedOnToolsVersion = 6.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					22CF1D5219B220A8002D4F59 = {
 						CreatedOnToolsVersion = 6.0;
@@ -210,6 +218,7 @@
 			files = (
 				22CF1D4919B220A8002D4F59 /* ViewController.swift in Sources */,
 				22CF1D4719B220A8002D4F59 /* AppDelegate.swift in Sources */,
+				22CF1D6419B2265E002D4F59 /* LuggageLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import CoreLocation
 
 class ViewController: UIViewController {
+  
+  var luggageLocationManager: LuggageLocationManager?
                             
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    luggageLocationManager?.startRangingWithCallback({
+      [unowned self] beacon in
+      self.updateViewWithBeacon(beacon)
+    })
   }
-
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  
+  func updateViewWithBeacon(beacon: CLBeacon) {
+    println("Ranging Result: \(beacon)")
   }
 
 
