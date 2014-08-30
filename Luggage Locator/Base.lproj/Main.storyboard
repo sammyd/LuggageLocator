@@ -3,6 +3,7 @@
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +17,71 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ6-4M-n8x" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
+                                <color key="backgroundColor" red="0.22101389630000001" green="0.50662462070000003" blue="0.73999521680000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Luggage">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="40" name="HelveticaNeue-Light"/>
+                                            <font key="NSOriginalFont" size="40" name="HelveticaNeue-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Locator">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="40" name="HelveticaNeue-Thin"/>
+                                            <font key="NSOriginalFont" size="40" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="verticalPadding">
+                                        <real key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-Em-oiA" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="527" width="160" height="40.5"/>
+                                <color key="backgroundColor" red="1" green="0.86195106580000003" blue="0.15694230179999999" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.22101389630000001" green="0.50662462070000003" blue="0.73999521680000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="355-s9-qgl" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
+                                <rect key="frame" x="160" y="527" width="160" height="40.5"/>
+                                <color key="backgroundColor" red="0.70711452789999996" green="1" blue="0.1964695668" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.22101389630000001" green="0.50662462070000003" blue="0.73999521680000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="355-s9-qgl" secondAttribute="trailing" id="2ve-uT-ea0"/>
+                            <constraint firstAttribute="width" secondItem="355-s9-qgl" secondAttribute="width" multiplier="2" id="5T2-Rk-qNG"/>
+                            <constraint firstItem="nJ6-4M-n8x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BTI-G7-FpA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GhG-Em-oiA" secondAttribute="bottom" id="ECA-PY-hxF"/>
+                            <constraint firstItem="GhG-Em-oiA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bwU-SW-oa4"/>
+                            <constraint firstItem="nJ6-4M-n8x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dro-35-0DU"/>
+                            <constraint firstAttribute="trailing" secondItem="nJ6-4M-n8x" secondAttribute="trailing" id="mcF-XD-KVL"/>
+                            <constraint firstAttribute="width" secondItem="GhG-Em-oiA" secondAttribute="width" multiplier="2" id="s2Q-ol-dQv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="355-s9-qgl" secondAttribute="bottom" id="xaB-z4-wvU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="accuracyLabel" destination="355-s9-qgl" id="YbC-18-Gqk"/>
+                        <outlet property="rssiLabel" destination="GhG-Em-oiA" id="es3-JE-YKa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234.66666666666666" y="359.73333333333335"/>
+            <point key="canvasLocation" x="234" y="359"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

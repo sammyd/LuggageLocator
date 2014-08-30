@@ -13,6 +13,7 @@
 		22CF1D4E19B220A8002D4F59 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CF1D4D19B220A8002D4F59 /* Images.xcassets */; };
 		22CF1D5A19B220A8002D4F59 /* Luggage_LocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D5919B220A8002D4F59 /* Luggage_LocatorTests.swift */; };
 		22CF1D6419B2265E002D4F59 /* LuggageLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */; };
+		22CF1D6619B257FB002D4F59 /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D6519B257FB002D4F59 /* PaddedLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		22CF1D5819B220A8002D4F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CF1D5919B220A8002D4F59 /* Luggage_LocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luggage_LocatorTests.swift; sourceTree = "<group>"; };
 		22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuggageLocationManager.swift; sourceTree = "<group>"; };
+		22CF1D6519B257FB002D4F59 /* PaddedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				22CF1D4D19B220A8002D4F59 /* Images.xcassets */,
 				22CF1D4419B220A8002D4F59 /* Supporting Files */,
 				22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */,
+				22CF1D6519B257FB002D4F59 /* PaddedLabel.swift */,
 			);
 			path = "Luggage Locator";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				22CF1D4919B220A8002D4F59 /* ViewController.swift in Sources */,
 				22CF1D4719B220A8002D4F59 /* AppDelegate.swift in Sources */,
+				22CF1D6619B257FB002D4F59 /* PaddedLabel.swift in Sources */,
 				22CF1D6419B2265E002D4F59 /* LuggageLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
