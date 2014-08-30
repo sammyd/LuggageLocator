@@ -14,6 +14,7 @@
 		22CF1D5A19B220A8002D4F59 /* Luggage_LocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D5919B220A8002D4F59 /* Luggage_LocatorTests.swift */; };
 		22CF1D6419B2265E002D4F59 /* LuggageLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */; };
 		22CF1D6619B257FB002D4F59 /* PaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D6519B257FB002D4F59 /* PaddedLabel.swift */; };
+		22CF1D6819B27D07002D4F59 /* FlashingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D6719B27D07002D4F59 /* FlashingImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		22CF1D5919B220A8002D4F59 /* Luggage_LocatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luggage_LocatorTests.swift; sourceTree = "<group>"; };
 		22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LuggageLocationManager.swift; sourceTree = "<group>"; };
 		22CF1D6519B257FB002D4F59 /* PaddedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedLabel.swift; sourceTree = "<group>"; };
+		22CF1D6719B27D07002D4F59 /* FlashingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashingImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				22CF1D4419B220A8002D4F59 /* Supporting Files */,
 				22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */,
 				22CF1D6519B257FB002D4F59 /* PaddedLabel.swift */,
+				22CF1D6719B27D07002D4F59 /* FlashingImageView.swift */,
 			);
 			path = "Luggage Locator";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				22CF1D4719B220A8002D4F59 /* AppDelegate.swift in Sources */,
 				22CF1D6619B257FB002D4F59 /* PaddedLabel.swift in Sources */,
 				22CF1D6419B2265E002D4F59 /* LuggageLocationManager.swift in Sources */,
+				22CF1D6819B27D07002D4F59 /* FlashingImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

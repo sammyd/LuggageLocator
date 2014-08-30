@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ6-4M-n8x" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ6-4M-n8x" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="87.5"/>
                                 <color key="backgroundColor" red="0.22101389630000001" green="0.50662462070000003" blue="0.73999521680000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <attributedString key="attributedText">
@@ -46,36 +46,52 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-Em-oiA" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="RSSI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhG-Em-oiA" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="527" width="160" height="40.5"/>
                                 <color key="backgroundColor" red="1" green="0.86195106580000003" blue="0.15694230179999999" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.22101389630000001" green="0.50662462070000003" blue="0.73999521680000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="355-s9-qgl" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Accuracy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="355-s9-qgl" customClass="PaddedLabel" customModule="Luggage_Locator" customModuleProvider="target">
                                 <rect key="frame" x="160" y="527" width="160" height="40.5"/>
                                 <color key="backgroundColor" red="0.70711452789999996" green="1" blue="0.1964695668" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.22101389630000001" green="0.50662462070000003" blue="0.73999521680000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luggage" translatesAutoresizingMaskIntoConstraints="NO" id="akt-12-osE" userLabel="Luggage Image">
+                                <rect key="frame" x="0.0" y="87" width="320" height="439.5"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="overlay_green" translatesAutoresizingMaskIntoConstraints="NO" id="I4Z-LA-RS3" userLabel="Overlay Image" customClass="FlashingImageView" customModule="Luggage_Locator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="87" width="320" height="439.5"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="355-s9-qgl" secondAttribute="trailing" id="2ve-uT-ea0"/>
                             <constraint firstAttribute="width" secondItem="355-s9-qgl" secondAttribute="width" multiplier="2" id="5T2-Rk-qNG"/>
+                            <constraint firstItem="I4Z-LA-RS3" firstAttribute="height" secondItem="akt-12-osE" secondAttribute="height" id="6XC-Kz-ehK"/>
                             <constraint firstItem="nJ6-4M-n8x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BTI-G7-FpA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GhG-Em-oiA" secondAttribute="bottom" id="ECA-PY-hxF"/>
+                            <constraint firstItem="I4Z-LA-RS3" firstAttribute="centerX" secondItem="akt-12-osE" secondAttribute="centerX" id="IaF-wF-JDo"/>
+                            <constraint firstAttribute="trailing" secondItem="akt-12-osE" secondAttribute="trailing" id="Nbw-d2-7qJ"/>
+                            <constraint firstItem="I4Z-LA-RS3" firstAttribute="width" secondItem="akt-12-osE" secondAttribute="width" id="NiJ-q3-IBU"/>
+                            <constraint firstItem="akt-12-osE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pq2-zb-SSS"/>
+                            <constraint firstItem="I4Z-LA-RS3" firstAttribute="centerY" secondItem="akt-12-osE" secondAttribute="centerY" id="XPo-Eh-8G6"/>
                             <constraint firstItem="GhG-Em-oiA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bwU-SW-oa4"/>
                             <constraint firstItem="nJ6-4M-n8x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dro-35-0DU"/>
                             <constraint firstAttribute="trailing" secondItem="nJ6-4M-n8x" secondAttribute="trailing" id="mcF-XD-KVL"/>
+                            <constraint firstItem="akt-12-osE" firstAttribute="top" secondItem="nJ6-4M-n8x" secondAttribute="bottom" id="n7M-An-AdK"/>
                             <constraint firstAttribute="width" secondItem="GhG-Em-oiA" secondAttribute="width" multiplier="2" id="s2Q-ol-dQv"/>
+                            <constraint firstItem="355-s9-qgl" firstAttribute="top" secondItem="akt-12-osE" secondAttribute="bottom" id="uDL-bM-ROS"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="355-s9-qgl" secondAttribute="bottom" id="xaB-z4-wvU"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="accuracyLabel" destination="355-s9-qgl" id="YbC-18-Gqk"/>
+                        <outlet property="luggageImageView" destination="akt-12-osE" id="x5c-Az-ilf"/>
+                        <outlet property="overlayImageView" destination="I4Z-LA-RS3" id="5Pt-ay-SQo"/>
                         <outlet property="rssiLabel" destination="GhG-Em-oiA" id="es3-JE-YKa"/>
                     </connections>
                 </viewController>
@@ -84,6 +100,10 @@
             <point key="canvasLocation" x="234" y="359"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="luggage" width="260" height="500"/>
+        <image name="overlay_green" width="260" height="500"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
