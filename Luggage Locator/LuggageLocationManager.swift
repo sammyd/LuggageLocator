@@ -32,6 +32,10 @@ class LuggageLocationManager : NSObject, CLLocationManagerDelegate {
   
   func startMonitoring() {
     locationManager.requestAlwaysAuthorization()
+    
+    let notificationSettings = UIUserNotificationSettings(forTypes: .Alert, categories: nil)
+    UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+    
     locationManager.startMonitoringForRegion(region)
     locationManager.delegate = self
   }
