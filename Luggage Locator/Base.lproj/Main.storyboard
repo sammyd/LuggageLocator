@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -73,7 +72,6 @@
                             <constraint firstAttribute="width" secondItem="355-s9-qgl" secondAttribute="width" multiplier="2" id="5T2-Rk-qNG"/>
                             <constraint firstItem="I4Z-LA-RS3" firstAttribute="height" secondItem="akt-12-osE" secondAttribute="height" id="6XC-Kz-ehK"/>
                             <constraint firstItem="nJ6-4M-n8x" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BTI-G7-FpA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GhG-Em-oiA" secondAttribute="bottom" id="ECA-PY-hxF"/>
                             <constraint firstItem="I4Z-LA-RS3" firstAttribute="centerX" secondItem="akt-12-osE" secondAttribute="centerX" id="IaF-wF-JDo"/>
                             <constraint firstAttribute="trailing" secondItem="akt-12-osE" secondAttribute="trailing" id="Nbw-d2-7qJ"/>
                             <constraint firstItem="I4Z-LA-RS3" firstAttribute="width" secondItem="akt-12-osE" secondAttribute="width" id="NiJ-q3-IBU"/>
@@ -81,11 +79,12 @@
                             <constraint firstItem="I4Z-LA-RS3" firstAttribute="centerY" secondItem="akt-12-osE" secondAttribute="centerY" id="XPo-Eh-8G6"/>
                             <constraint firstItem="GhG-Em-oiA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bwU-SW-oa4"/>
                             <constraint firstItem="nJ6-4M-n8x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dro-35-0DU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="355-s9-qgl" secondAttribute="bottom" id="eF8-JG-45h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GhG-Em-oiA" secondAttribute="bottom" id="gaE-dM-ocQ"/>
                             <constraint firstAttribute="trailing" secondItem="nJ6-4M-n8x" secondAttribute="trailing" id="mcF-XD-KVL"/>
                             <constraint firstItem="akt-12-osE" firstAttribute="top" secondItem="nJ6-4M-n8x" secondAttribute="bottom" id="n7M-An-AdK"/>
                             <constraint firstAttribute="width" secondItem="GhG-Em-oiA" secondAttribute="width" multiplier="2" id="s2Q-ol-dQv"/>
                             <constraint firstItem="355-s9-qgl" firstAttribute="top" secondItem="akt-12-osE" secondAttribute="bottom" id="uDL-bM-ROS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="355-s9-qgl" secondAttribute="bottom" id="xaB-z4-wvU"/>
                         </constraints>
                     </view>
                     <connections>

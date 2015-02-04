@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223B8CB81A8293F2003DA73B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 223B8CB71A8293F2003DA73B /* LaunchScreen.xib */; };
 		22CF1D4719B220A8002D4F59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D4619B220A8002D4F59 /* AppDelegate.swift */; };
 		22CF1D4919B220A8002D4F59 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF1D4819B220A8002D4F59 /* ViewController.swift */; };
 		22CF1D4C19B220A8002D4F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CF1D4A19B220A8002D4F59 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		223B8CB71A8293F2003DA73B /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		22CF1D4119B220A8002D4F59 /* Luggage Locator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luggage Locator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CF1D4519B220A8002D4F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CF1D4619B220A8002D4F59 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				22CF1D4D19B220A8002D4F59 /* Images.xcassets */,
 				22CF1D4419B220A8002D4F59 /* Supporting Files */,
 				22CF1D6319B2265E002D4F59 /* LuggageLocationManager.swift */,
+				223B8CB71A8293F2003DA73B /* LaunchScreen.xib */,
 				22CF1D6519B257FB002D4F59 /* PaddedLabel.swift */,
 				22CF1D6719B27D07002D4F59 /* FlashingImageView.swift */,
 			);
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CF1D4C19B220A8002D4F59 /* Main.storyboard in Resources */,
+				223B8CB81A8293F2003DA73B /* LaunchScreen.xib in Resources */,
 				22CF1D4E19B220A8002D4F59 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +347,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Luggage Locator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,7 +357,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Luggage Locator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
