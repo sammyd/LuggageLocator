@@ -31,6 +31,7 @@ class LuggageLocationManager : NSObject, CLLocationManagerDelegate {
   }
   
   func startMonitoring() {
+    locationManager.requestAlwaysAuthorization()
     locationManager.startMonitoringForRegion(region)
     locationManager.delegate = self
   }
